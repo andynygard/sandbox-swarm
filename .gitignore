@@ -1,0 +1,12 @@
+bin/
+obj/
+Temp/
+Library/
+*.suo
+*.user
+*.cachefile
+*.pidb
+*.userprefs
+*.unityproj
+StyleCop.Cache
+Settings.StyleCop
