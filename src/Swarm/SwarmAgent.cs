@@ -10,6 +10,6 @@
         /// <summary>
         /// Gets or sets the velocity of the agent.
         /// </summary>
-        public Vector3 Velocity { get; set; }
+        public Vector2 Velocity { get; set; }
     }
 }
