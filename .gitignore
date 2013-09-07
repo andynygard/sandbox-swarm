@@ -8,5 +8,9 @@ Library/
 *.pidb
 *.userprefs
 *.unityproj
+*.dll
+*.pdb
 StyleCop.Cache
 Settings.StyleCop
+*Swarm.dll
+*Swarm.pdb
