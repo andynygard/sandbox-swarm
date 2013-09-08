@@ -21,7 +21,6 @@
         // The sprites
         private SpriteData[] sprites;
         private List<int> availableSprites;
-        private List<int> activeSprites;
 
         // The mesh data
         private Vector3[] vertices;
@@ -40,7 +39,6 @@
         {
             this.mesh = this.GetComponent<MeshFilter>().mesh;
             this.availableSprites = new List<int>();
-            this.activeSprites = new List<int>();
             this.sprites = new SpriteData[0];
             this.vertices = new Vector3[0];
             this.triangles = new int[0];
@@ -105,9 +103,6 @@
             SpriteData sprite = this.sprites[spriteIndex];
             sprite.Initialise(client, size, uv, uvSize);
 
-            // Add this to the active list
-            this.activeSprites.Add(spriteIndex);
-
             // Set the vertex and UV data
             Vector3[] vertices = sprite.GetVertices();
             Vector2[] uvs = sprite.GetUVs();
@@ -140,7 +135,6 @@
 
             // Update the tracking lists
             this.availableSprites.Add(sprite.Index);
-            this.activeSprites.Remove(sprite.Index);
 
             this.vertValuesChanged = true;
         }
