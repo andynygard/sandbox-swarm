@@ -12,5 +12,7 @@ Library/
 *.pdb
 StyleCop.Cache
 Settings.StyleCop
-*Swarm.dll
-*Swarm.pdb
+unity/unity.sln
+unity/unity-csharp.sln
+unity/Assets/Libs/Swarm.dll
+unity/Assets/Libs/Swarm.pdb
